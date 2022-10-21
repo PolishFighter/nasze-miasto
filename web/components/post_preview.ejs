@@ -3,12 +3,12 @@
 		<div class="col-md-1">
 			<% if(locals.logged_in) { %>
 				<% if(locals.user.liked.find(v => v == post.id) == undefined ) { %>
-					<a href="/api/like_post?post=<%- post.id %>" class="btn btn-danger"><i class="fa-regular fa-heart like-heart-icon"></i><%- post.likes %></a>
+					<a href="/api/like_post?post=<%- post.id %>" class="like"><i class="fa-regular fa-heart like-heart-icon"></i><%- post.likes %></a>
 				<% } else { %>
-					<a href="/api/unlike_post?post=<%- post.id %>" class="btn btn-danger"><i class="fa-solid fa-heart like-heart-icon"></i><%- post.likes %></a>
+					<a href="/api/unlike_post?post=<%- post.id %>" class="like"><i class="fa-solid fa-heart like-heart-icon"></i><%- post.likes %></a>
 				<% } %>
 			<% } else { %>
-				<span class="btn btn-danger" style="pointer-events: none;"><i class="fa-solid fa-heart like-heart-icon"></i><%- post.likes %></span>
+				<span class="like" style="pointer-events: none;"><i class="fa-solid fa-heart like-heart-icon"></i><%- post.likes %></span>
 			<% } %>
 		</div>
 		<div class="col">

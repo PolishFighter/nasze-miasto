@@ -57,3 +57,10 @@ main {
 	padding-left: 20px;
 	margin-top: 5px;
 }
+
+.like {
+	background-image: linear-gradient(#f92f4d, #ff5c5c);
+	color:white;
+	padding: 0.6rem;
+	border-radius: 0.5rem;
+}
